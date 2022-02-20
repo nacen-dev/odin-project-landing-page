@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --dark-blue: #1f2937;
+  --white: #F9FAF8;
+  --blue: #3882f6;
+  --gray: #E5E7EB;
+  --dark-gray: #646464;
+}
+
+.header {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  display: flex;
+  padding: 0 15%;
+  align-items: center;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 24px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+} 
+
+.nav-link {
+  list-style: none;
+  color: var(--gray);
+  font-size: 18px;
+}
+
+.hero {
+  padding: 50px 15%;
+  display: flex;
+  background-color: var(--dark-blue);
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-main-text {
+  font-size: 48px;
+  font-weight: bolder;
+  color: var(--white);
+  margin: 0;
+}
+
+.hero-sub-text {
+  font-size: 18px;
+  color: var(--gray);
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+.hero-cta {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+  padding: 5px 24px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.information {
+  background-color: var(--white);
+  padding: 50px 15%;
+}
+
+.information-header {
+  font-size: 36px;
+  font-weight: bolder;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-top: 0;
+}
+
+.information-content {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.information-img-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.information-img {
+  border: 3px solid var(--blue);
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.information-text {
+  text-align: center;
+  width: 150px;
+}
+
+.quote {
+  background-color: var(--gray);
+  display: flex;
+  padding: 50px 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote > figure {
+  width: 80%;
+}
+
+.quote > figure > blockquote {
+  font-size: 36px;
+  font-style: italic;
+  color: var(--dark-blue);
+  font-weight: 300;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.quote > figure > figcaption {
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+}
